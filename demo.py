@@ -21,6 +21,9 @@ from law_store import LawStore, describe
 # Dưới ngưỡng này thì bot trả lời "không tìm thấy" thay vì đoán bừa.
 # Đây là một tham số quan trọng để bạn thử nghiệm trong báo cáo nghiên cứu.
 NOT_FOUND_THRESHOLD = 0.15
+# Cấu hình tốt nhất tìm được trong các thí nghiệm (xem nhat_ky_thi_nghiem.md):
+KEYWORD_WEIGHT = 5      # v2: trọng số của keywords (cần dữ liệu có trường "keywords")
+MIN_COVERAGE = 0.6      # v3: độ phủ tối thiểu giữa câu hỏi và bản ghi, thấp hơn thì từ chối
 
 
 def on_event(e):
@@ -39,11 +42,12 @@ def on_event(e):
 
 
 def answer(store, question):
-    results = store.search(question, top_k=3)
-    if not results or results[0]["score"] < NOT_FOUND_THRESHOLD:
+    results = [r for r in store.search(question, top_k=3)
+               if r["score"] >= NOT_FOUND_THRESHOLD and r["coverage"] >= MIN_COVERAGE]
+    if not results:
         return "Mình không tìm thấy quy định phù hợp trong dữ liệu hiện có."
     out = [describe(results[0]["record"])]
-    others = [r["record"]["behavior"] for r in results[1:] if r["score"] >= NOT_FOUND_THRESHOLD]
+    others = [r["record"]["behavior"] for r in results[1:]]
     if others:
         out.append("\nCó thể bạn cũng muốn hỏi về: " + "; ".join(others))
     out.append("\n(Thông tin chỉ mang tính tham khảo, không phải tư vấn pháp lý.)")
@@ -52,7 +56,7 @@ def answer(store, question):
 
 def main():
     data_dir = sys.argv[1] if len(sys.argv) > 1 else "data"
-    store = LawStore(data_dir, poll_seconds=2.0)
+    store = LawStore(data_dir, poll_seconds=2.0, keyword_weight=KEYWORD_WEIGHT)
     store.add_listener(on_event)
     store.start_watching()
 

@@ -76,10 +76,10 @@ def run_queries(store, rows, repeat):
     return out
 
 
-def judge(item, threshold):
-    """Áp ngưỡng 'không tìm thấy' lên kết quả thô và chấm đúng/sai."""
+def judge(item, threshold, min_cov=0.0):
+    """Áp ngưỡng 'không tìm thấy' (điểm >= threshold VÀ độ phủ >= min_cov) lên kết quả thô và chấm đúng/sai."""
     row, raw = item["row"], item["raw"]
-    shown = [r for r in raw if r["score"] >= threshold]
+    shown = [r for r in raw if r["score"] >= threshold and r.get("coverage", 1.0) >= min_cov]
     ids = [r["record"]["id"] for r in shown]
     rank = next((i + 1 for i, rid in enumerate(ids) if id_matches(rid, row["expected"])), 0)
     if row["answerable"]:
@@ -94,8 +94,8 @@ def pct(a, b):
     return f"{100 * a / b:5.1f}%" if b else "  n/a "
 
 
-def summarize(items, threshold):
-    results = [judge(it, threshold) for it in items]
+def summarize(items, threshold, min_cov=0.0):
+    results = [judge(it, threshold, min_cov) for it in items]
     ans = [(it, r) for it, r in zip(items, results) if it["row"]["answerable"]]
     una = [(it, r) for it, r in zip(items, results) if not it["row"]["answerable"]]
     top1 = sum(1 for _, r in ans if r["rank"] == 1)
@@ -111,8 +111,9 @@ def summarize(items, threshold):
 # ----------------------------------------------------------------------------
 # In báo cáo
 # ----------------------------------------------------------------------------
-def print_report(items, s, threshold):
-    print(f"\n=== KẾT QUẢ (ngưỡng 'không tìm thấy' = {threshold}) ===")
+def print_report(items, s, threshold, min_cov=0.0):
+    extra = f", độ phủ tối thiểu = {min_cov}" if min_cov else ""
+    print(f"\n=== KẾT QUẢ (ngưỡng điểm 'không tìm thấy' = {threshold}{extra}) ===")
     print(f"Số câu hỏi: {s['n']}  (có đáp án: {s['n_ans']}, ngoài phạm vi: {s['n_una']})")
     print(f"Top-1 (câu có đáp án)       : {s['top1']}/{s['n_ans']}  {pct(s['top1'], s['n_ans'])}")
     print(f"Top-3 (câu có đáp án)       : {s['top3']}/{s['n_ans']}  {pct(s['top3'], s['n_ans'])}")
@@ -156,11 +157,21 @@ def print_failures(items, s, limit=25):
         print(f"  ... và {len(fails) - limit} câu nữa (xem file kết quả CSV)")
 
 
+def print_sweep_cov(items, threshold):
+    print("\n=== SO SÁNH CÁC NGƯỠNG ĐỘ PHỦ (v3) ===")
+    print(f"{'độ phủ':>7}{'top-1':>9}{'từ chối đúng':>14}{'từ chối nhầm':>14}{'đúng tổng':>11}")
+    for i in range(0, 11):
+        c = round(i * 0.1, 2)  # round: tránh lỗi số thực (6*0.1 = 0.6000000000000001)
+        s = summarize(items, threshold, c)
+        print(f"{c:>7.1f}{pct(s['top1'], s['n_ans']):>9}{pct(s['rejected_ok'], s['n_una']):>14}"
+              f"{pct(s['wrongly_rejected'], s['n_ans']):>14}{pct(s['overall'], s['n']):>11}")
+
+
 def print_sweep(items):
     print("\n=== SO SÁNH CÁC NGƯỠNG 'KHÔNG TÌM THẤY' ===")
     print(f"{'ngưỡng':>7}{'top-1':>9}{'từ chối đúng':>14}{'từ chối nhầm':>14}{'đúng tổng':>11}")
     for i in range(0, 11):
-        thr = i * 0.05
+        thr = round(i * 0.05, 2)
         s = summarize(items, thr)
         print(f"{thr:>7.2f}{pct(s['top1'], s['n_ans']):>9}{pct(s['rejected_ok'], s['n_una']):>14}"
               f"{pct(s['wrongly_rejected'], s['n_ans']):>14}{pct(s['overall'], s['n']):>11}")
@@ -190,7 +201,10 @@ def main():
     ap.add_argument("--repeat", type=int, default=5, help="số lần chạy mỗi câu để đo thời gian")
     ap.add_argument("--kw-weight", type=float, default=None,
                     help="v2: trọng số của keywords (chỉ mục riêng). Bỏ trống = v0/v1 (keywords gộp chung vào văn bản)")
-    ap.add_argument("--sweep", action="store_true", help="in bảng so sánh nhiều ngưỡng")
+    ap.add_argument("--min-coverage", type=float, default=0.0,
+                    help="v3: độ phủ tối thiểu (0-1) giữa câu hỏi và bản ghi tìm được; thấp hơn thì bot từ chối. 0 = tắt")
+    ap.add_argument("--sweep", action="store_true", help="in bảng so sánh nhiều ngưỡng điểm")
+    ap.add_argument("--sweep-cov", action="store_true", help="in bảng so sánh nhiều ngưỡng độ phủ (v3)")
     ap.add_argument("--out", default="results.csv", help="file CSV lưu kết quả từng câu")
     args = ap.parse_args()
 
@@ -211,11 +225,13 @@ def main():
         print("LƯU Ý: bạn đang chấm tập TEST. Chỉ làm vậy ở bước cuối, sau khi đã ngừng chỉnh bot.")
 
     items = run_queries(store, rows, max(1, args.repeat))
-    s = summarize(items, args.threshold)
-    print_report(items, s, args.threshold)
+    s = summarize(items, args.threshold, args.min_coverage)
+    print_report(items, s, args.threshold, args.min_coverage)
     print_failures(items, s)
     if args.sweep:
         print_sweep(items)
+    if args.sweep_cov:
+        print_sweep_cov(items, args.threshold)
     save_results(args.out, items, s)
 
 

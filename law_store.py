@@ -64,6 +64,24 @@ def tokenize(text):
     return words + bigrams
 
 
+# Từ "chức năng" trong câu hỏi tiếng Việt (đã bỏ dấu): không mang nội dung luật nên không tính vào độ phủ
+STOPWORDS = {
+    "co", "khong", "ko", "k", "bi", "phat", "bao", "nhieu", "la", "thi", "the", "nao", "nhu", "sao", "gi",
+    "khi", "o", "dau", "va", "cho", "cua", "minh", "toi", "ban", "nhe", "a", "nha", "duoc", "de", "mot",
+    "nhung", "cac", "nay", "do", "vay", "hay", "hoac", "neu", "se", "da", "dang", "roi", "vua", "muc",
+    "tien", "bang", "voi", "tu", "ve", "can", "phai", "con", "cung", "rat", "qua", "lam", "hoi", "thu",
+    # từ nhắc tên văn bản ("theo nghị định 100", "theo luật"): không mang nội dung về hành vi
+    "theo", "luat", "nghi", "dinh",
+}
+VEHICLE_ALIASES = {"xe_may": "xemay moto", "o_to": "oto xehoi"}
+
+
+def content_tokens(text):
+    """Các từ (âm tiết) mang nội dung: bỏ số, từ chức năng. Tách số khỏi chữ (30km -> 30, km)."""
+    words = re.findall(r"[a-z]+|[0-9]+", normalize(text))
+    return [w for w in words if not w.isdigit() and w not in STOPWORDS]
+
+
 # ----------------------------------------------------------------------------
 # Kiểm tra dữ liệu
 # ----------------------------------------------------------------------------
@@ -155,6 +173,7 @@ class LawStore:
         self.poll_seconds = poll_seconds
         self.keyword_weight = keyword_weight
         self.kw_index = None
+        self._cov_tokens = {}
         self._lock = threading.RLock()
         self._files = {}        # đường dẫn -> {"sig","hash","records","error"}
         self.records = {}       # id -> bản ghi đang dùng (chỉ bản ghi active)
@@ -296,6 +315,10 @@ class LawStore:
         else:
             index = TfidfIndex({rid: search_text_of(r, include_keywords=False) for rid, r in merged.items()})
             kw_index = TfidfIndex({rid: keywords_text_of(r) for rid, r in merged.items()})
+        self._cov_tokens = {
+            rid: set(content_tokens(search_text_of(r) + " " + VEHICLE_ALIASES.get(r["vehicle_type"], "")))
+            for rid, r in merged.items()
+        }
         self.records, self._record_hashes, self.index, self.kw_index = merged, new_hashes, index, kw_index
         self.version += 1
         self.last_change_time = time.time()
@@ -330,7 +353,18 @@ class LawStore:
                     s *= 1.5 if r["vehicle_type"] == vehicle else 0.7
                 results.append({"score": s, "record": r})
         results.sort(key=lambda x: x["score"], reverse=True)
-        return results[:top_k]
+        results = results[:top_k]
+        with self._lock:
+            for item in results:
+                item["coverage"] = self.coverage(query, item["record"]["id"])
+        return results
+
+    def coverage(self, query, record_id):
+        """Độ phủ (v3): tỉ lệ từ nội dung của câu hỏi có mặt trong bản ghi. Gần 0 = câu hỏi nói chuyện khác."""
+        q = set(content_tokens(query))
+        if not q:
+            return 0.0
+        return len(q & self._cov_tokens.get(record_id, set())) / len(q)
 
     @staticmethod
     def detect_vehicle(query):
