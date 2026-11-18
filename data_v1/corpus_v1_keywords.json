@@ -1,0 +1,2203 @@
+{
+  "meta": {
+    "topic": "Xử phạt vi phạm giao thông đường bộ (Việt Nam)",
+    "main_document": "Nghị định 168/2024/NĐ-CP",
+    "amending_documents": [
+      "Nghị định 238/2026/NĐ-CP"
+    ],
+    "note_old_document": "Nghị định 100/2019/NĐ-CP đã bị bãi bỏ (từ 15/5/2026). Không dùng số liệu theo Nghị định 100.",
+    "how_to_fill": [
+      "rule_refs và rule_text lấy từ Luật 36/2024/QH15 (nguyên văn trích từ file đã tải). legal_refs/fine_*/points_* vẫn phải lấy từ Nghị định 168/2024 (đã cập nhật theo Nghị định 238/2026).",
+      "Mỗi hành vi có thể nằm ở nhiều khoản: phạt tiền, trừ điểm GPLX, tước GPLX. Ghi từng nơi vào legal_refs với part, article, clause, point.",
+      "Số tiền ghi bằng đồng (số nguyên). Trường 'text' dán nguyên văn tiếng Việt có dấu. Khi điền xong đổi status thành 'done'.",
+      "Hành vi nào không có trong nguyên văn thì đổi status thành 'removed' (đừng xóa ngay), hành vi nào cần tách mức thì nhân bản bản ghi và đổi id."
+    ],
+    "legal_refs_example": [
+      {
+        "part": "phat_tien",
+        "article": null,
+        "clause": null,
+        "point": null
+      },
+      {
+        "part": "tru_diem_gplx",
+        "article": null,
+        "clause": null,
+        "point": null
+      },
+      {
+        "part": "tuoc_gplx",
+        "article": null,
+        "clause": null,
+        "point": null
+      }
+    ],
+    "allowed_vehicle_type": [
+      "xe_may",
+      "o_to"
+    ],
+    "allowed_status": [
+      "todo",
+      "done",
+      "needs_238_check",
+      "removed"
+    ],
+    "rule_source": {
+      "document": "Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15 (bản hợp nhất, file 55-vbhn-vpqh.pdf)",
+      "effective": "2025-01-01",
+      "amended_by": "Luật số 118/2025/QH15 (hiệu lực 2026-07-01)",
+      "provides": "Quy tắc giao thông: cái gì được phép / bị cấm. KHÔNG có mức phạt tiền; mức phạt, điểm trừ, tước giấy phép nằm trong Nghị định 168/2024/NĐ-CP (đã sửa bởi Nghị định 238/2026/NĐ-CP).",
+      "points_note": "Điều 58: giấy phép lái xe có 12 điểm; số điểm trừ cụ thể do Chính phủ quy định chi tiết (khoản 6)."
+    },
+    "source_decree_file": {
+      "file": "168-nd-cp_signed.pdf",
+      "note": "Bản scan Nghị định 168/2024/NĐ-CP (gốc, chưa sửa đổi). source_pdf_pages là số trang trong file PDF này (Điều 6: tr.8-16, Điều 7: tr.16-22, Điều 13: tr.33-37, Điều 14: tr.37-39, Điều 18: tr.43-45)."
+    },
+    "status_meaning": {
+      "done": "đã điền từ nguyên văn Nghị định 168/2024 và không thuộc phần Nghị định 238/2026 đã biết là sửa đổi",
+      "needs_238_check": "đã điền theo bản gốc Nghị định 168 nhưng thuộc phần Nghị định 238/2026 sửa đổi hoặc bổ sung; cần đối chiếu văn bản 238 trước khi dùng",
+      "todo": "chưa điền"
+    },
+    "units": {
+      "fine_min/fine_max": "đồng (VND), mức phạt cho người điều khiển phương tiện (cá nhân)",
+      "points_deducted": "số điểm trừ giấy phép lái xe (0 = không có điều khoản trừ điểm cho hành vi này)",
+      "license_suspension_months": "[tối thiểu, tối đa] tháng tước quyền sử dụng giấy phép lái xe, hoặc null"
+    }
+  },
+  "records": [
+    {
+      "id": "gt01_vuot_den_do_xe_may",
+      "status": "done",
+      "group": "den_bien_huong_di",
+      "behavior": "Vượt đèn đỏ (không chấp hành hiệu lệnh đèn tín hiệu giao thông)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 7,
+          "point": "c"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 11,
+          "clause": 4,
+          "point": null,
+          "note": "Tín hiệu đèn giao thông; đọc thêm điểm quy định về đèn đỏ"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 4000000,
+      "fine_max": 6000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        20,
+        22
+      ],
+      "keywords": [
+        "chạy đèn đỏ",
+        "lố đèn đỏ",
+        "vượt đèn",
+        "vượt đèn đỏ",
+        "đèn đỏ"
+      ]
+    },
+    {
+      "id": "gt02_vuot_den_do_o_to",
+      "status": "done",
+      "group": "den_bien_huong_di",
+      "behavior": "Vượt đèn đỏ (không chấp hành hiệu lệnh đèn tín hiệu giao thông)",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 9,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 11,
+          "clause": 4,
+          "point": null,
+          "note": "Tín hiệu đèn giao thông; đọc thêm điểm quy định về đèn đỏ"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 18000000,
+      "fine_max": 20000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        14,
+        16
+      ],
+      "keywords": [
+        "chạy đèn đỏ",
+        "lố đèn đỏ",
+        "vượt đèn",
+        "vượt đèn đỏ",
+        "đèn đỏ"
+      ]
+    },
+    {
+      "id": "gt03_di_nguoc_chieu_xe_may",
+      "status": "done",
+      "group": "den_bien_huong_di",
+      "behavior": "Đi ngược chiều (đường một chiều, đường có biển cấm đi ngược chiều)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 7,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 10,
+          "clause": 1,
+          "point": null,
+          "note": "đi bên phải theo chiều đi của mình; cần đối chiếu thêm Điều 11 (biển báo)"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 4000000,
+      "fine_max": 6000000,
+      "points_deducted": 2,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”, trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Cùng điểm a còn gồm hành vi đi trên vỉa hè.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        19,
+        21
+      ],
+      "keywords": [
+        "chạy ngược chiều",
+        "đi ngược chiều",
+        "đường một chiều"
+      ]
+    },
+    {
+      "id": "gt04_di_nguoc_chieu_o_to",
+      "status": "done",
+      "group": "den_bien_huong_di",
+      "behavior": "Đi ngược chiều (đường một chiều, đường có biển cấm đi ngược chiều)",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 9,
+          "point": "d"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 10,
+          "clause": 1,
+          "point": null,
+          "note": "đi bên phải theo chiều đi của mình; cần đối chiếu thêm Điều 11 (biển báo)"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 18000000,
+      "fine_max": 20000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”, trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        14,
+        16
+      ],
+      "keywords": [
+        "chạy ngược chiều",
+        "đi ngược chiều",
+        "đường một chiều"
+      ]
+    },
+    {
+      "id": "gt05_toc_do_5_10_xe_may",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định từ 5 km/h đến dưới 10 km/h",
+      "vehicle_type": "xe_may",
+      "condition_detail": "quá tốc độ từ 5 đến dưới 10 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 2,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        17
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt06_toc_do_5_10_o_to",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định từ 5 km/h đến dưới 10 km/h",
+      "vehicle_type": "o_to",
+      "condition_detail": "quá tốc độ từ 5 đến dưới 10 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 3,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        9
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt07_toc_do_10_20_xe_may",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định từ 10 km/h đến 20 km/h",
+      "vehicle_type": "xe_may",
+      "condition_detail": "quá tốc độ từ 10 đến 20 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 4,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        18
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt08_toc_do_10_20_o_to",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định từ 10 km/h đến 20 km/h",
+      "vehicle_type": "o_to",
+      "condition_detail": "quá tốc độ từ 10 đến 20 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 5,
+          "point": "đ"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 4000000,
+      "fine_max": 6000000,
+      "points_deducted": 2,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        12,
+        16
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt09_toc_do_tren_20_xe_may",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định trên 20 km/h",
+      "vehicle_type": "xe_may",
+      "condition_detail": "quá tốc độ trên 20 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 8,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 6000000,
+      "fine_max": 8000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        20,
+        22
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt10_toc_do_20_35_o_to",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định trên 20 km/h đến 35 km/h",
+      "vehicle_type": "o_to",
+      "condition_detail": "quá tốc độ trên 20 đến 35 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 6,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 6000000,
+      "fine_max": 8000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h đến 35 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        13,
+        16
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt11_toc_do_tren_35_o_to",
+      "status": "done",
+      "group": "toc_do",
+      "behavior": "Chạy quá tốc độ quy định trên 35 km/h",
+      "vehicle_type": "o_to",
+      "condition_detail": "quá tốc độ trên 35 km/h",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 7,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "c"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 12,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 12,
+          "clause": 4,
+          "point": null,
+          "note": "tốc độ tối đa cụ thể do Bộ trưởng Bộ Xây dựng quy định chi tiết, không nằm trong Luật này"
+        }
+      ],
+      "rule_text": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+      "fine_min": 12000000,
+      "fine_max": 14000000,
+      "points_deducted": 6,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe chạy quá tốc độ quy định trên 35 km/h;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        13,
+        16
+      ],
+      "keywords": [
+        "chạy nhanh",
+        "chạy quá nhanh",
+        "nhanh hơn mức cho phép",
+        "quá tốc độ",
+        "vượt tốc độ"
+      ]
+    },
+    {
+      "id": "gt12_nong_do_con_muc1_xe_may",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 1 (thấp nhất)",
+      "vehicle_type": "xe_may",
+      "condition_detail": "chưa vượt quá 50 mg/100 ml máu hoặc chưa vượt quá 0,25 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 6,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 2000000,
+      "fine_max": 3000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        19,
+        22
+      ],
+      "keywords": [
+        "bia",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt13_nong_do_con_muc2_xe_may",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 2",
+      "vehicle_type": "xe_may",
+      "condition_detail": "vượt quá 50 đến 80 mg/100 ml máu hoặc vượt quá 0,25 đến 0,4 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 8,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "d"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 6000000,
+      "fine_max": 8000000,
+      "points_deducted": 10,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        20,
+        22
+      ],
+      "keywords": [
+        "bia",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt14_nong_do_con_muc3_xe_may",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 3 (cao nhất)",
+      "vehicle_type": "xe_may",
+      "condition_detail": "vượt quá 80 mg/100 ml máu hoặc vượt quá 0,4 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 9,
+          "point": "d"
+        },
+        {
+          "part": "tuoc_gplx",
+          "article": 7,
+          "clause": 12,
+          "point": "c"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 8000000,
+      "fine_max": 10000000,
+      "points_deducted": 0,
+      "license_suspension_months": [
+        22,
+        24
+      ],
+      "extra_penalties": "Tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        20,
+        21
+      ],
+      "keywords": [
+        "bia",
+        "mất bằng",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "tước bằng",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt15_nong_do_con_muc1_o_to",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 1 (thấp nhất)",
+      "vehicle_type": "o_to",
+      "condition_detail": "chưa vượt quá 50 mg/100 ml máu hoặc chưa vượt quá 0,25 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 6,
+          "point": "c"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 6000000,
+      "fine_max": 8000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        13,
+        16
+      ],
+      "keywords": [
+        "bia",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt16_nong_do_con_muc2_o_to",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 2",
+      "vehicle_type": "o_to",
+      "condition_detail": "vượt quá 50 đến 80 mg/100 ml máu hoặc vượt quá 0,25 đến 0,4 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 9,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "d"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 18000000,
+      "fine_max": 20000000,
+      "points_deducted": 10,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        14,
+        16
+      ],
+      "keywords": [
+        "bia",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt17_nong_do_con_muc3_o_to",
+      "status": "done",
+      "group": "nong_do_con",
+      "behavior": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn - mức 3 (cao nhất)",
+      "vehicle_type": "o_to",
+      "condition_detail": "vượt quá 80 mg/100 ml máu hoặc vượt quá 0,4 mg/1 lít khí thở",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 11,
+          "point": "a"
+        },
+        {
+          "part": "tuoc_gplx",
+          "article": 6,
+          "clause": 15,
+          "point": "c"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+      "fine_min": 30000000,
+      "fine_max": 40000000,
+      "points_deducted": 0,
+      "license_suspension_months": [
+        22,
+        24
+      ],
+      "extra_penalties": "Tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+      "text": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        14,
+        15
+      ],
+      "keywords": [
+        "bia",
+        "mất bằng",
+        "nhậu",
+        "nồng độ cồn",
+        "rượu",
+        "rượu bia",
+        "say",
+        "say rượu",
+        "say xỉn",
+        "thổi nồng độ cồn",
+        "tước bằng",
+        "uống bia",
+        "uống rượu"
+      ]
+    },
+    {
+      "id": "gt18_mu_bao_hiem_nguoi_lai_xe_may",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Người điều khiển xe không đội mũ bảo hiểm (hoặc không cài quai đúng quy cách)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 2,
+          "point": "h"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 33,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        17
+      ],
+      "keywords": [
+        "không đội mũ",
+        "không đội nón",
+        "người lái",
+        "nón bảo hiểm"
+      ]
+    },
+    {
+      "id": "gt19_mu_bao_hiem_nguoi_ngoi_sau_xe_may",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Chở người ngồi sau không đội mũ bảo hiểm (hoặc không cài quai đúng quy cách)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 2,
+          "point": "i"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 33,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        17
+      ],
+      "keywords": [
+        "chở bạn",
+        "không đội nón",
+        "người ngồi sau",
+        "nón bảo hiểm",
+        "đèo người"
+      ]
+    },
+    {
+      "id": "gt20_cho_qua_so_nguoi_xe_may",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Chở theo 02 người trên xe (trừ các trường hợp được phép theo nghị định)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 2,
+          "point": "g"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 33,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 9,
+          "clause": 13,
+          "point": null,
+          "note": "cấm chở quá số người theo quy định"
+        }
+      ],
+      "rule_text": "Người lái xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người: a) Chở người bệnh đi cấp cứu; b) Áp giải người có hành vi vi phạm pháp luật; c) Trẻ em dưới 12 tuổi; d) Người già yếu hoặc người khuyết tật.",
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Chở từ 03 người trở lên là hành vi khác, xem gt35.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        17
+      ],
+      "keywords": [
+        "chở 2 người",
+        "chở hai người",
+        "đèo",
+        "đèo thêm"
+      ]
+    },
+    {
+      "id": "gt21_day_an_toan_o_to",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Không thắt dây an toàn",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 3,
+          "point": "k"
+        },
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 3,
+          "point": "l"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 10,
+          "clause": 2,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ.",
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không thắt dây đai an toàn khi điều khiển xe chạy trên đường; Chở người trên xe ô tô không thắt dây đai an toàn (tại vị trí có trang bị dây đai an toàn) khi xe đang chạy;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Điểm k áp dụng cho người lái, điểm l cho người ngồi trên xe; cùng mức phạt.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        10
+      ],
+      "keywords": [
+        "dây an toàn",
+        "dây đai an toàn",
+        "thắt dây"
+      ]
+    },
+    {
+      "id": "gt22_tre_em_thiet_bi_an_toan_o_to",
+      "status": "needs_238_check",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Chở trẻ em không có thiết bị an toàn phù hợp",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 3,
+          "point": "m"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 10,
+          "clause": 3,
+          "point": null,
+          "note": "khoản này đã được sửa đổi bởi Luật 118/2025/QH15, hiệu lực 01/7/2026"
+        }
+      ],
+      "rule_text": "Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe không được cho trẻ em ngồi cùng hàng ghế, trừ xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em, trừ xe ô tô kinh doanh vận tải hành khách.",
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe (trừ loại xe ô tô chỉ có một hàng ghế) hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Một số bài báo cho biết Nghị định 238/2026 thay đổi quy định này.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        10
+      ],
+      "keywords": [
+        "cháu nhỏ",
+        "em bé",
+        "ghế an toàn",
+        "ghế trẻ em",
+        "trẻ em"
+      ]
+    },
+    {
+      "id": "gt23_dien_thoai_xe_may",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Sử dụng điện thoại hoặc thiết bị điện tử khi lái xe",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 4,
+          "point": "đ"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 6,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ.",
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        19,
+        22
+      ],
+      "keywords": [
+        "dùng điện thoại",
+        "gọi điện",
+        "nghe điện thoại",
+        "nhắn tin",
+        "điện thoại"
+      ]
+    },
+    {
+      "id": "gt24_dien_thoai_o_to",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Sử dụng điện thoại hoặc thiết bị điện tử khi lái xe",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 5,
+          "point": "h"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 6,
+          "clause": 16,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 6,
+          "point": null,
+          "note": null
+        }
+      ],
+      "rule_text": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ.",
+      "fine_min": 4000000,
+      "fine_max": 6000000,
+      "points_deducted": 4,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        12,
+        16
+      ],
+      "keywords": [
+        "dùng điện thoại",
+        "gọi điện",
+        "nghe điện thoại",
+        "nhắn tin",
+        "điện thoại"
+      ]
+    },
+    {
+      "id": "gt25_khong_co_gplx_xe_may",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Điều khiển xe không có giấy phép lái xe (xe mô tô hai bánh đến 125 cm3)",
+      "vehicle_type": "xe_may",
+      "condition_detail": "xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc công suất động cơ điện đến 11 kW, và các loại xe tương tự xe mô tô",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 5,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 57,
+          "clause": null,
+          "point": null,
+          "note": "Giấy phép lái xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định của pháp luật; điều khiển xe máy chuyên dùng tham gia giao thông đường bộ không có giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng.",
+      "fine_min": 2000000,
+      "fine_max": 4000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực, giấy phép lái xe không phù hợp với loại xe đang điều khiển;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Xe mô tô trên 125 cm3 là hành vi khác, xem gt37. Điều 18 không có quy định trừ điểm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        44
+      ],
+      "keywords": [
+        "GPLX",
+        "bằng lái",
+        "bằng lái xe",
+        "không có bằng lái"
+      ]
+    },
+    {
+      "id": "gt26_khong_co_gplx_o_to",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Điều khiển xe không có giấy phép lái xe",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 9,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 57,
+          "clause": null,
+          "point": null,
+          "note": "Giấy phép lái xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định của pháp luật; điều khiển xe máy chuyên dùng tham gia giao thông đường bộ không có giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng.",
+      "fine_min": 18000000,
+      "fine_max": 20000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Điều 18 không có quy định trừ điểm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        45
+      ],
+      "keywords": [
+        "GPLX",
+        "bằng lái",
+        "bằng lái xe",
+        "không có bằng lái"
+      ]
+    },
+    {
+      "id": "gt27_khong_co_bao_hiem_tnds_xe_may",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Không có giấy chứng nhận bảo hiểm trách nhiệm dân sự bắt buộc của chủ xe cơ giới",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 2,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [],
+      "rule_text": null,
+      "fine_min": 200000,
+      "fine_max": 300000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Người điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy không có chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới còn hiệu lực;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Chưa đối chiếu trong file Luật; tìm căn cứ trong Nghị định 168 hoặc luật về bảo hiểm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        43
+      ],
+      "keywords": [
+        "bảo hiểm TNDS",
+        "bảo hiểm bắt buộc",
+        "bảo hiểm xe",
+        "bảo hiểm xe máy",
+        "không có bảo hiểm xe",
+        "quên bảo hiểm"
+      ]
+    },
+    {
+      "id": "gt28_khong_co_bao_hiem_tnds_o_to",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Không có giấy chứng nhận bảo hiểm trách nhiệm dân sự bắt buộc của chủ xe cơ giới",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 4,
+          "point": "c"
+        }
+      ],
+      "rule_refs": [],
+      "rule_text": null,
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Người điều khiển xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ và các loại xe tương tự xe ô tô không có chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới còn hiệu lực.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Chưa đối chiếu trong file Luật; tìm căn cứ trong Nghị định 168 hoặc luật về bảo hiểm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        44
+      ],
+      "keywords": [
+        "bảo hiểm TNDS",
+        "bảo hiểm bắt buộc",
+        "bảo hiểm xe",
+        "bảo hiểm xe máy",
+        "không có bảo hiểm xe",
+        "quên bảo hiểm"
+      ]
+    },
+    {
+      "id": "gt29_khong_co_giay_dang_ky_xe_may",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Điều khiển xe không có giấy đăng ký xe",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 14,
+          "clause": 2,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 14,
+          "clause": 8,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 39,
+          "clause": null,
+          "point": null,
+          "note": "Cấp, thu hồi chứng nhận đăng ký xe và biển số (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 2000000,
+      "fine_max": 3000000,
+      "points_deducted": 2,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe không có chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) hoặc sử dụng chứng nhận đăng ký xe (hoặc bản sao chứng nhận đăng ký xe có chứng thực kèm theo bản gốc giấy biên nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp tổ chức tín dụng, chi nhánh ngân hàng nước ngoài giữ bản gốc chứng nhận đăng ký xe) đã hết hạn sử dụng, hết hiệu lực;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Hành vi 'không mang theo' giấy đăng ký chỉ bị phạt với xe kinh doanh vận tải (Điều 18 khoản 2 điểm c).",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "keywords": [
+        "cavet",
+        "cà vẹt",
+        "giấy tờ xe",
+        "giấy đăng ký"
+      ]
+    },
+    {
+      "id": "gt30_bien_so_xe_may",
+      "status": "needs_238_check",
+      "group": "phuong_tien_bien_so",
+      "behavior": "Không gắn biển số, gắn biển số không đúng hoặc làm thay đổi nhận dạng biển số",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 14,
+          "clause": 3,
+          "point": "a"
+        },
+        {
+          "part": "phat_tien",
+          "article": 14,
+          "clause": 3,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 14,
+          "clause": 8,
+          "point": "b"
+        },
+        {
+          "part": "tich_thu_bien_so",
+          "article": 14,
+          "clause": 5,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 17,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 36,
+          "clause": null,
+          "point": null,
+          "note": "Biển số xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Sản xuất, sử dụng, mua, bán trái phép biển số xe; điều khiển xe cơ giới, xe máy chuyên dùng gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí; bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+      "fine_min": 4000000,
+      "fine_max": 6000000,
+      "points_deducted": 6,
+      "license_suspension_months": null,
+      "extra_penalties": "Tịch thu biển số xe (khi gắn biển số không đúng chứng nhận đăng ký hoặc không do cơ quan có thẩm quyền cấp: Điều 14 khoản 5 điểm a).",
+      "text": "Điều khiển xe không gắn biển số (đối với loại xe có quy định phải gắn biển số); gắn biển số không đúng với chứng nhận đăng ký xe hoặc gắn biển số không do cơ quan có thẩm quyền cấp; Điều khiển xe gắn biển số không đúng vị trí, không đúng quy cách theo quy định; gắn biển số không rõ chữ, số hoặc sử dụng chất liệu khác sơn, dán lên chữ, số của biển số xe; gắn biển số bị bẻ cong, che lấp, làm thay đổi chữ, số, màu sắc (của chữ, số, nền biển số xe), hình dạng, kích thước của biển số xe.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Nghị định 238/2026 mở rộng phạm vi xử lý về biển số.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        38,
+        39
+      ],
+      "keywords": [
+        "biển kiểm soát",
+        "biển số",
+        "che biển số",
+        "không biển số"
+      ]
+    },
+    {
+      "id": "gt31_bien_so_o_to",
+      "status": "needs_238_check",
+      "group": "phuong_tien_bien_so",
+      "behavior": "Không gắn biển số (ô tô)",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 13,
+          "clause": 7,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 13,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 17,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 36,
+          "clause": null,
+          "point": null,
+          "note": "Biển số xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Sản xuất, sử dụng, mua, bán trái phép biển số xe; điều khiển xe cơ giới, xe máy chuyên dùng gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí; bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+      "fine_min": 10000000,
+      "fine_max": 12000000,
+      "points_deducted": 6,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) không gắn biển số (đối với loại xe có quy định phải gắn biển số).",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Nghị định 238/2026 mở rộng phạm vi xử lý về biển số.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        35,
+        37
+      ],
+      "keywords": [
+        "biển kiểm soát",
+        "biển số",
+        "che biển số",
+        "không biển số"
+      ]
+    },
+    {
+      "id": "gt32_guong_chieu_hau_xe_may",
+      "status": "done",
+      "group": "phuong_tien_bien_so",
+      "behavior": "Điều khiển xe không có gương chiếu hậu (hoặc có nhưng không có tác dụng)",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 14,
+          "clause": 1,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [],
+      "rule_text": null,
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe không có còi; đèn soi biển số; đèn báo hãm; gương chiếu hậu bên trái người điều khiển hoặc có nhưng không có tác dụng;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Cùng điểm a còn gồm các lỗi thiếu còi, đèn soi biển số, đèn báo hãm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        37
+      ],
+      "keywords": [
+        "gương",
+        "kính chiếu hậu",
+        "mất gương"
+      ]
+    },
+    {
+      "id": "gt33_dung_do_trai_quy_dinh_o_to",
+      "status": "done",
+      "group": "dung_do",
+      "behavior": "Dừng xe, đỗ xe không đúng vị trí (không sát lề đường, ngược chiều lưu thông, trên dải phân cách...)",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 2,
+          "point": "d"
+        },
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 2,
+          "point": "đ"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 18,
+          "clause": null,
+          "point": null,
+          "note": "Dừng xe, đỗ xe; đọc thêm các khoản cụ thể"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 600000,
+      "fine_max": 800000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường rộng; dừng xe, đỗ xe không sát mép đường phía bên phải theo chiều đi ở nơi đường có lề đường hẹp hoặc không có lề đường; dừng xe, đỗ xe ngược với chiều lưu thông của làn đường; dừng xe, đỗ xe trên dải phân cách cố định ở giữa hai phần đường xe chạy; đỗ xe trên dốc không chèn bánh;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Điểm đ cùng khoản 2 gồm thêm dừng xe không sát lề, dừng nơi có biển cấm dừng... Các trường hợp dừng đỗ khác mức: khoản 3 (điểm đ, e), khoản 4 điểm b, khoản 5 điểm k. Xem gt36 cho đỗ xe nơi cấm đỗ.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        9
+      ],
+      "keywords": [
+        "biển cấm đỗ",
+        "dừng xe",
+        "đậu xe",
+        "đỗ vỉa hè",
+        "đỗ xe"
+      ]
+    },
+    {
+      "id": "gt34_duoi_18_tuoi_dieu_khien_xe_mo_to",
+      "status": "needs_238_check",
+      "group": "do_tuoi",
+      "behavior": "Người dưới 18 tuổi điều khiển xe mô tô",
+      "vehicle_type": "xe_may",
+      "condition_detail": "người từ đủ 16 đến dưới 18 tuổi điều khiển xe mô tô từ 50 cm3 trở lên hoặc từ 04 kW trở lên",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 4,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 59,
+          "clause": 1,
+          "point": "a, b",
+          "note": "độ tuổi điều khiển xe gắn máy và độ tuổi cấp giấy phép lái xe"
+        }
+      ],
+      "rule_text": "a) Người đủ 16 tuổi trở lên được điều khiển xe gắn máy; b) Người đủ 18 tuổi trở lên được cấp giấy phép lái xe hạng A1, A, B1, B, C1, ... (rút gọn, xem nguyên văn Điều 59 khoản 1)",
+      "fine_min": 400000,
+      "fine_max": 600000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Người từ đủ 16 tuổi đến dưới 18 tuổi điều khiển xe mô tô có dung tích xi-lanh từ 50 cm3 trở lên hoặc có công suất động cơ điện từ 04 kW trở lên;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Cùng điều: 14 đến dưới 16 tuổi bị phạt cảnh cáo (khoản 1); 16 đến dưới 18 tuổi lái ô tô bị phạt 4-6 triệu (khoản 6). Nghị định 238/2026 mở rộng phạm vi xử phạt nhóm 16-18 tuổi lái xe mô tô.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        43,
+        44
+      ],
+      "keywords": [
+        "16 tuổi",
+        "17 tuổi",
+        "chưa đủ tuổi",
+        "dưới 18 tuổi",
+        "học sinh"
+      ]
+    },
+    {
+      "id": "gt35_cho_tu_3_nguoi_xe_may",
+      "status": "done",
+      "group": "an_toan_nguoi_cho",
+      "behavior": "Chở theo từ 03 người trở lên trên xe",
+      "vehicle_type": "xe_may",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 7,
+          "clause": 3,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 7,
+          "clause": 13,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 33,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 9,
+          "clause": 13,
+          "point": null,
+          "note": "cấm chở quá số người theo quy định"
+        }
+      ],
+      "rule_text": "Người lái xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người: a) Chở người bệnh đi cấp cứu; b) Áp giải người có hành vi vi phạm pháp luật; c) Trẻ em dưới 12 tuổi; d) Người già yếu hoặc người khuyết tật.",
+      "fine_min": 600000,
+      "fine_max": 800000,
+      "points_deducted": 2,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Chở theo từ 03 người trở lên trên xe;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        18,
+        21
+      ],
+      "keywords": [
+        "3 người",
+        "ba người",
+        "chở 3 người",
+        "chở ba người",
+        "đèo ba"
+      ]
+    },
+    {
+      "id": "gt36_do_xe_noi_cam_do_o_to",
+      "status": "done",
+      "group": "dung_do",
+      "behavior": "Đỗ xe nơi có biển “Cấm đỗ xe” hoặc biển “Cấm dừng xe và đỗ xe”; đỗ xe không sát lề đường, trên đường dành riêng cho xe buýt, trên vỉa hè trái quy định",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 6,
+          "clause": 3,
+          "point": "e"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 18,
+          "clause": null,
+          "point": null,
+          "note": "Dừng xe, đỗ xe; đọc thêm các khoản cụ thể"
+        }
+      ],
+      "rule_text": null,
+      "fine_min": 800000,
+      "fine_max": 1000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Đỗ xe không sát theo lề đường, vỉa hè phía bên phải theo chiều đi hoặc bánh xe gần nhất cách lề đường, vỉa hè quá 0,25 mét; đỗ xe trên đường dành riêng cho xe buýt; đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đỗ, để xe ở vỉa hè trái quy định của pháp luật; đỗ xe nơi có biển “Cấm đỗ xe” hoặc biển “Cấm dừng xe và đỗ xe”, trừ hành vi vi phạm quy định tại điểm đ khoản 4, điểm c khoản 7 Điều này;",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": null,
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        10
+      ],
+      "keywords": [
+        "biển cấm đỗ",
+        "dừng xe",
+        "đậu xe",
+        "đỗ vỉa hè",
+        "đỗ xe"
+      ]
+    },
+    {
+      "id": "gt37_khong_co_gplx_xe_may_tren_125cc",
+      "status": "done",
+      "group": "giay_to",
+      "behavior": "Điều khiển xe không có giấy phép lái xe (xe mô tô hai bánh trên 125 cm3, xe mô tô ba bánh)",
+      "vehicle_type": "xe_may",
+      "condition_detail": "xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc công suất động cơ điện trên 11 kW, xe mô tô ba bánh",
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": null,
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 18,
+          "clause": 7,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 1,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 57,
+          "clause": null,
+          "point": null,
+          "note": "Giấy phép lái xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định của pháp luật; điều khiển xe máy chuyên dùng tham gia giao thông đường bộ không có giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng.",
+      "fine_min": 6000000,
+      "fine_max": 8000000,
+      "points_deducted": 0,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Không có giấy phép lái xe hoặc sử dụng giấy phép lái xe đã bị trừ hết điểm hoặc sử dụng giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe bị tẩy xóa, giấy phép lái xe không còn hiệu lực.",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Điều 18 không có quy định trừ điểm.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        44,
+        45
+      ],
+      "keywords": [
+        "GPLX",
+        "bằng lái",
+        "bằng lái xe",
+        "không có bằng lái"
+      ]
+    },
+    {
+      "id": "gt38_bien_so_sai_chung_nhan_o_to",
+      "status": "needs_238_check",
+      "group": "phuong_tien_bien_so",
+      "behavior": "Điều khiển xe gắn biển số không đúng với chứng nhận đăng ký xe hoặc gắn biển số không do cơ quan có thẩm quyền cấp",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 13,
+          "clause": 8,
+          "point": "a"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 13,
+          "clause": 13,
+          "point": "c"
+        },
+        {
+          "part": "tich_thu_bien_so",
+          "article": 13,
+          "clause": 10,
+          "point": "a"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 17,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 36,
+          "clause": null,
+          "point": null,
+          "note": "Biển số xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Sản xuất, sử dụng, mua, bán trái phép biển số xe; điều khiển xe cơ giới, xe máy chuyên dùng gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí; bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+      "fine_min": 20000000,
+      "fine_max": 26000000,
+      "points_deducted": 10,
+      "license_suspension_months": null,
+      "extra_penalties": "Tịch thu biển số xe (Điều 13 khoản 10 điểm a).",
+      "text": "Điều khiển xe gắn biển số không đúng với chứng nhận đăng ký xe hoặc gắn biển số không do cơ quan có thẩm quyền cấp (kể cả rơ moóc và sơ mi rơ moóc);",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Nghị định 238/2026 mở rộng phạm vi xử lý về biển số.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "keywords": [
+        "biển kiểm soát",
+        "biển số",
+        "che biển số",
+        "không biển số"
+      ]
+    },
+    {
+      "id": "gt39_bien_so_sai_vi_tri_thay_doi_o_to",
+      "status": "needs_238_check",
+      "group": "phuong_tien_bien_so",
+      "behavior": "Gắn biển số không đúng vị trí, không đúng quy cách; không rõ chữ, số; bẻ cong, che lấp, làm thay đổi chữ, số, màu sắc, hình dạng, kích thước biển số",
+      "vehicle_type": "o_to",
+      "condition_detail": null,
+      "document": "Nghị định 168/2024/NĐ-CP",
+      "amended_by": [
+        "Nghị định 238/2026/NĐ-CP"
+      ],
+      "legal_refs": [
+        {
+          "part": "phat_tien",
+          "article": 13,
+          "clause": 8,
+          "point": "b"
+        },
+        {
+          "part": "tru_diem_gplx",
+          "article": 13,
+          "clause": 13,
+          "point": "b"
+        }
+      ],
+      "rule_refs": [
+        {
+          "article": 9,
+          "clause": 17,
+          "point": null,
+          "note": null
+        },
+        {
+          "article": 36,
+          "clause": null,
+          "point": null,
+          "note": "Biển số xe (mới đối chiếu tiêu đề điều)"
+        }
+      ],
+      "rule_text": "Sản xuất, sử dụng, mua, bán trái phép biển số xe; điều khiển xe cơ giới, xe máy chuyên dùng gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí; bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+      "fine_min": 20000000,
+      "fine_max": 26000000,
+      "points_deducted": 6,
+      "license_suspension_months": null,
+      "extra_penalties": null,
+      "text": "Điều khiển xe không gắn đủ biển số hoặc gắn biển số không đúng vị trí, không đúng quy cách theo quy định; gắn biển số không rõ chữ, số hoặc sử dụng chất liệu khác sơn, dán lên chữ, số của biển số xe; gắn biển số bị bẻ cong, che lấp, làm thay đổi chữ, số, màu sắc (của chữ, số, nền biển số xe), hình dạng, kích thước của biển số xe (kể cả rơ moóc và sơ mi rơ moóc).",
+      "effective_from": "2025-01-01",
+      "source_url": null,
+      "notes": "Số liệu theo bản gốc Nghị định 168/2024/NĐ-CP (file đã tải). Chưa đối chiếu Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026): bắt buộc kiểm tra lại. Nghị định 238/2026 mở rộng phạm vi xử lý về biển số.",
+      "source_file": "168-nd-cp_signed.pdf",
+      "source_pdf_pages": [
+        35,
+        37
+      ],
+      "keywords": [
+        "biển kiểm soát",
+        "biển số",
+        "che biển số",
+        "không biển số"
+      ]
+    }
+  ]
+}

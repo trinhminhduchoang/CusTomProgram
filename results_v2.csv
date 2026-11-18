@@ -1,0 +1,39 @@
+﻿q_id,question,style_tag,asker,answerable,expected_ids,top1_id,top1_score,rank_in_top3,correct,latency_ms
+C001,Ô tô có nồng độ cồn vượt 50 đến 80 mg trong máu phạt bao nhiêu,formal,Claude (soạn mẫu),yes,gt16,gt16_nong_do_con_muc2_o_to,3.133,1,1,1.113
+C003,Chở bạn đi học không đội nón bảo hiểm bị phạt không?,casual,Claude (soạn mẫu),yes,gt19,gt19_mu_bao_hiem_nguoi_ngoi_sau_xe_may,3.394,1,1,0.576
+C005,Vừa lái xe máy vừa nghe điện thoại bị phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt23,gt23_dien_thoai_xe_may,4.482,1,1,0.792
+C007,Đi xe máy vượt đèn đỏ bị phạt bao nhiêu tiền?,casual,Claude (soạn mẫu),yes,gt01,gt01_vuot_den_do_xe_may,4.646,1,1,0.802
+C009,Uống rượu bia lái xe bị phạt bao nhiêu,vague,Claude (soạn mẫu),yes,gt12|gt13|gt14|gt15|gt16|gt17,gt12_nong_do_con_muc1_xe_may,1.915,1,1,4.882
+C011,Đỗ xe ô tô trên vỉa hè bị phạt không,casual,Claude (soạn mẫu),yes,gt36,gt36_do_xe_noi_cam_do_o_to,4.210,1,1,3.872
+C013,Đi xe máy 110cc không có bằng lái bị phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt25,gt25_khong_co_gplx_xe_may,4.988,1,1,1.069
+C015,quên bảo hiểm xe máy bị phạt không,casual,Claude (soạn mẫu),yes,gt27,gt27_khong_co_bao_hiem_tnds_xe_may,5.998,1,1,4.540
+C017,Đi xe máy nhanh hơn mức cho phép 30km/h bị phạt thế nào,casual,Claude (soạn mẫu),yes,gt09,gt09_toc_do_tren_20_xe_may,3.414,1,1,1.999
+C019,dan che bien so xe may,no_diacritics,Claude (soạn mẫu),yes,gt30,gt30_bien_so_xe_may,4.906,1,1,2.050
+C021,Xe máy không chấp hành hiệu lệnh của đèn tín hiệu giao thông bị xử phạt như thế nào?,formal,Claude (soạn mẫu),yes,gt01,gt01_vuot_den_do_xe_may,2.931,1,1,4.004
+C023,Chở hàng cồng kềnh trên xe máy bị phạt bao nhiêu,data_gap,Claude (soạn mẫu),no,,gt27_khong_co_bao_hiem_tnds_xe_may,3.228,0,0,4.456
+C025,Xe máy có nồng độ cồn nhưng chưa vượt quá 50 miligam bị phạt bao nhiêu?,formal,Claude (soạn mẫu),yes,gt12,gt12_nong_do_con_muc1_xe_may,2.936,1,1,3.379
+C027,ba nguoi mot xe may bi phat sao,no_diacritics,Claude (soạn mẫu),yes,gt35,gt35_cho_tu_3_nguoi_xe_may,3.500,1,1,0.808
+C029,Lái ô tô nồng độ cồn vượt quá 80 miligam bị tước bằng bao lâu?,formal,Claude (soạn mẫu),yes,gt17,gt17_nong_do_con_muc3_o_to,3.714,1,1,1.576
+C031,chở em bé nhỏ trên xe hơi không có ghế an toàn,vague,Claude (soạn mẫu),yes,gt22,gt22_tre_em_thiet_bi_an_toan_o_to,5.149,1,1,9.759
+C033,Người 17 tuổi điều khiển xe mô tô từ 50 cm3 trở lên,formal,Claude (soạn mẫu),yes,gt34,gt34_duoi_18_tuoi_dieu_khien_xe_mo_to,3.864,1,1,0.976
+C035,Ô tô gắn biển số không đúng với giấy đăng ký xe,formal,Claude (soạn mẫu),yes,gt38,gt38_bien_so_sai_chung_nhan_o_to,3.774,1,1,4.556
+C037,Ô tô không có giấy đăng ký xe bị phạt bao nhiêu?,data_gap,Claude (soạn mẫu),no,,gt29_khong_co_giay_dang_ky_xe_may,2.240,0,0,0.726
+C039,Uống bia rồi chạy xe máy bị phạt thế nào,casual,Claude (soạn mẫu),yes,gt12|gt13|gt14,gt12_nong_do_con_muc1_xe_may,1.932,1,1,0.770
+C041,Xe máy không có gương chiếu hậu bị phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt32,gt32_guong_chieu_hau_xe_may,4.127,1,1,4.862
+C043,Điều khiển xe mô tô không có giấy đăng ký xe,formal,Claude (soạn mẫu),yes,gt29,gt29_khong_co_giay_dang_ky_xe_may,4.984,1,1,1.099
+C045,Đi xe máy không đội mũ bảo hiểm phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt18,gt18_mu_bao_hiem_nguoi_lai_xe_may,4.951,1,1,1.697
+C047,Ô tô không gắn biển số phạt thế nào?,casual,Claude (soạn mẫu),yes,gt31,gt31_bien_so_o_to,5.251,1,1,2.274
+C049,Chở trẻ em dưới 10 tuổi không có thiết bị an toàn phù hợp trên ô tô,formal,Claude (soạn mẫu),yes,gt22,gt22_tre_em_thiet_bi_an_toan_o_to,4.643,1,1,1.125
+C051,Dùng điện thoại khi lái ô tô phạt bao nhiêu tiền và trừ mấy điểm,multi_part,Claude (soạn mẫu),yes,gt24,gt24_dien_thoai_o_to,4.730,1,1,0.996
+C053,Học phí đại học ở Hà Nội một năm là bao nhiêu,out_of_scope,Claude (soạn mẫu),no,,gt34_duoi_18_tuoi_dieu_khien_xe_mo_to,0.742,0,0,0.779
+C055,Xe máy không gắn biển số bị phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt30,gt30_bien_so_xe_may,3.944,1,1,0.360
+C057,Học sinh 16 tuổi chạy xe máy 150cc bị phạt bao nhiêu,casual,Claude (soạn mẫu),yes,gt34,gt34_duoi_18_tuoi_dieu_khien_xe_mo_to,4.058,1,1,4.188
+C059,Phạt vượt đèn đỏ theo nghị định 100 là bao nhiêu?,outdated,Claude (soạn mẫu),yes,gt01|gt02,gt02_vuot_den_do_o_to,3.990,1,1,2.484
+C061,Đăng kiểm xe ô tô ở đâu và mất bao nhiêu tiền?,out_of_scope,Claude (soạn mẫu),no,,gt28_khong_co_bao_hiem_tnds_o_to,1.667,0,0,0.999
+C063,Thủ tục sang tên xe ô tô như thế nào?,out_of_scope,Claude (soạn mẫu),no,,gt36_do_xe_noi_cam_do_o_to,1.467,0,0,1.717
+C065,Mình chạy xe máy lố đèn đỏ thì sao nhỉ,casual,Claude (soạn mẫu),yes,gt01,gt01_vuot_den_do_xe_may,4.714,1,1,0.499
+C067,Xe máy vượt đèn đỏ và không đội mũ bảo hiểm thì bị phạt tổng bao nhiêu?,multi_part,Claude (soạn mẫu),yes,gt01|gt18,gt18_mu_bao_hiem_nguoi_lai_xe_may,4.492,1,1,0.687
+C069,Bằng lái hết hạn vẫn lái xe có bị phạt không?,vague,Claude (soạn mẫu),yes,gt25|gt26|gt37,gt26_khong_co_gplx_o_to,4.324,1,1,0.597
+C071,Cách nộp thuế thu nhập cá nhân,out_of_scope,Claude (soạn mẫu),no,,gt29_khong_co_giay_dang_ky_xe_may,0.974,0,0,0.362
+C073,Đi ngược chiều đường một chiều bằng xe máy phạt bao nhiêu?,casual,Claude (soạn mẫu),yes,gt03,gt03_di_nguoc_chieu_xe_may,6.680,1,1,0.864
+C075,uong ruou lai xe may co sao ko,typo,Claude (soạn mẫu),yes,gt12|gt13|gt14,gt25_khong_co_gplx_xe_may,2.839,0,0,0.318
